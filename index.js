@@ -1,4 +1,6 @@
+//register event listener
 document.getElementById('8').addEventListener('click',ask);
+//get html element variable
 let answerout = document.getElementById('answer');
 
 
@@ -8,11 +10,12 @@ function ask() {
     let question = document.getElementById('input').value.toLowerCase();
     let answer = "";
     console.log(question);
-    //specific responses
+    //blank response
     if(question == "") {
         answer = "Please ask a question..."
     }
     else{
+        //specific responses
         if(question == "does the magic eight ball work?") {answer = "Of course.";}
         else if(question == "is javascript awesome?") {answer = "Its functional."}
         else if(question == "") {answer = "Please ask a question..."}
